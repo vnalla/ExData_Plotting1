@@ -15,7 +15,7 @@ data_file_name <- "household_power_consumption.txt"
 
 ## Load every thing and use subset to filter
 
-df <- read.delim2(data_file_name, header=TRUE, sep=";", , stringsAsFactors=FALSE,dec=".")
+df <- read.delim2(data_file_name, header=TRUE, sep=";", stringsAsFactors=FALSE,dec=".")
 
 df <- subset(df, Date == '1/2/2007' | Date == '2/2/2007')
 
